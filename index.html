@@ -6,6 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>World Cup</title>
     <link rel="stylesheet" href="./css/style.css" />
+    <style>
+      .blog-nav-button {
+        background: #dd0000;
+      }
+      .blog-nav-button a {
+        color: #fff;
+      }
+    </style>
   </head>
   <body>
     <header>
@@ -20,7 +28,7 @@
             It has roots in a piece of classical Latin literature from 45 BC,
             making it over 2000 years old.
           </p>
-          <button class="link-button">
+          <button class="link-button btn-primary">
             <a class="" href="#"
               >Watch Live
               <i class="fa-solid fa-angle-right link-button-icon"></i>
@@ -32,9 +40,21 @@
         </div>
       </section>
       <section class="main-blogs">
-        <aside class="side-nav">
+        <aside class="side-nav-items">
           <div class="side-nav-item">
-            <a href="#">Upcoming Match</a>
+            <button class="nav-button">
+              <a href="#">Upcoming Match</a>
+            </button>
+          </div>
+          <div class="side-nav-item">
+            <button class="nav-button">
+              <a href="#">All Group</a>
+            </button>
+          </div>
+          <div class="side-nav-item">
+            <button class="nav-button blog-nav-button">
+              <a href="#">Blog</a>
+            </button>
           </div>
         </aside>
       </section>
