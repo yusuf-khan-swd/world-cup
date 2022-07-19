@@ -1,0 +1,138 @@
+/* Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+
+/* General Styles */
+:root {
+  --primary-background: #161616;
+  --primary-button: #dd0000;
+  --background: #fff;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background: var(--background);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+main {
+  width: 80%;
+  margin: 0 auto;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.link-button {
+  border: none;
+  background: var(--primary-button);
+  padding: 16px 40px;
+  border-radius: 5px;
+  align-items: center;
+  cursor: pointer;
+  transition: background-color 0.5s ease-in-out;
+}
+.link-button-icon {
+  margin-left: 15px;
+  position: absolute;
+  animation: sliding 1s ease-in-out 0.2s infinite alternate;
+}
+
+.link-button:hover {
+  background-color: #ff1e1eb6;
+}
+
+@keyframes sliding {
+  from {
+    margin-left: 15px;
+  }
+  to {
+    margin-left: 30px;
+  }
+}
+
+/* Hero section Styles */
+.hero-section {
+  background-color: var(--primary-background);
+  border-radius: 30px;
+  color: #fff;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  justify-items: center;
+  height: 400px;
+  margin-top: 30px;
+}
+
+.hero-content {
+  margin-left: 100px;
+}
+
+.hero-content h1 {
+  font-family: "Poppins";
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 50px;
+  margin-bottom: 16px;
+}
+
+.hero-content p {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  margin-bottom: 30px;
+}
+
+@media screen and (max-width: 576px) {
+  section {
+    margin-bottom: 25px;
+  }
+  main {
+    width: 95%;
+  }
+  .hero-section {
+    grid-template-columns: repeat(1, 1fr);
+    border-radius: 5px;
+    height: 100%;
+  }
+  .hero-content {
+    margin: 28px 53px;
+    text-align: center;
+  }
+  .hero-content h1 {
+    font-size: 22px;
+    line-height: 33px;
+  }
+  .hero-content p {
+    font-size: 14px;
+    line-height: 24px;
+  }
+}
+
+@media screen and (min-width: 576px) and (max-width: 992px) {
+  main {
+    width: 95%;
+  }
+  .hero-section {
+    height: 100%;
+  }
+  .hero-content {
+    margin: 20px;
+  }
+  .hero-content h1 {
+    font-size: 22px;
+    line-height: 33px;
+  }
+  .hero-content p {
+    font-size: 14px;
+    line-height: 24px;
+  }
+}
