@@ -20,6 +20,16 @@ body {
   padding: 0;
 }
 
+ul {
+  padding: 0;
+  margin: 0;
+}
+li {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
 main {
   width: 80%;
   margin: 0 auto;
@@ -344,14 +354,14 @@ button {
   cursor: pointer;
 }
 
-.footer__items {
+.footer__items a {
   color: #b9b9b9;
   cursor: pointer;
   transition: color 0.3s;
   margin-bottom: 10px;
 }
 
-.footer__item:hover {
+.footer__item a:hover {
   color: white;
 }
 
