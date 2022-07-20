@@ -272,6 +272,33 @@ button {
   }
 }
 
+.matches-blog {
+  text-align: center;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.matches-images {
+  display: flex;
+  margin: 20px;
+  align-items: center;
+}
+
+.match-between {
+  margin: 0 20px;
+}
+
+.matches-heading {
+  margin-bottom: 10px;
+}
+
+.matches-content {
+  margin-bottom: 50px;
+}
+
 /* Tablet View All Button */
 .tablet-view-all-button {
   text-align: center;
