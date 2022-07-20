@@ -4,13 +4,13 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>World Cup</title>
+    <title>Breaking World Cup News in 10second</title>
     <link rel="stylesheet" href="./css/style.css" />
     <style>
-      .blog-nav-button {
+      .active-page {
         background: #dd0000;
       }
-      .blog-nav-button a {
+      .active-page a {
         color: #fff;
       }
     </style>
@@ -20,7 +20,7 @@
       <nav></nav>
     </header>
     <main>
-      <section class="hero-section">
+      <section class="section-margin hero-section">
         <div class="hero-content">
           <h1>The Greatest show on the earth</h1>
           <p>
@@ -40,7 +40,7 @@
         </div>
       </section>
 
-      <section class="main-blogs">
+      <section class="section-margin main-blogs">
         <aside class="side-nav-items">
           <div class="side-nav-item">
             <button class="nav-button">
@@ -54,10 +54,10 @@
           </div>
           <div class="side-nav-item">
             <button
-              class="nav-button blog-nav-button"
+              class="nav-button active-page"
               style="background: #dd0000; color: #fff"
             >
-              <a href="index.html">Blog</a>
+              <a href="./index.html">Blog</a>
             </button>
           </div>
         </aside>
@@ -209,16 +209,22 @@
         </article>
       </section>
     </main>
-    <footer>
-      <h2>Goal</h2>
-      <hr />
-      <div class="footer-link">
-        <p>Contact Us</p>
-        <p>Terms of Service</p>
-        <p>Privacy Policy</p>
-        <p>Privacy Settings</p>
-        <p>Goal App</p>
-        <p>Goal Live</p>
+
+    <div class="section-margin tablet-view-all-button">
+      <button class="btn-primary link-button">
+        <a class="" href="#">View All</a>
+      </button>
+    </div>
+
+    <footer class="footer">
+      <h2 class="footer__heading">Goal</h2>
+      <div class="footer__items">
+        <p class="footer__item">Contact Us</p>
+        <p class="footer__item">Terms of Service</p>
+        <p class="footer__item">Privacy Policy</p>
+        <p class="footer__item">Privacy Settings</p>
+        <p class="footer__item">Goal App</p>
+        <p class="footer__item">Goal Live</p>
       </div>
     </footer>
 
